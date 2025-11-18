@@ -2,6 +2,26 @@
 __pycache__/
 *.py[codz]
 *$py.class
+# 1. HIDE SENSITIVE PYTHON CODE
+# Only hide your core pipeline, keeping utility functions public if desired
+pipeline.py
+train_model.py
+
+# 2. HIDE MODEL WEIGHTS (The largest IP/data risk)
+# The .pth file holds the trained weights for ResNet18, DenseNet121, etc. [cite: 839]
+*.pth
+*.pt
+model.pth
+
+# 3. HIDE DATA FILES
+# The actual HAM10000 images or metadata should not be uploaded.
+/data/
+HAM10000_metadata.csv
+
+# 4. HIDE SECRETS
+# Critical for any deployment credentials (Streamlit, Hugging Face, etc.)
+.env 
+secrets.json
 
 # C extensions
 *.so
