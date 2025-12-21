@@ -61,7 +61,6 @@ A Streamlit application was developed to allow users to upload images or scan a 
 3.  Grad-CAM Heatmap overlay.
 4.  Clinical recommendation (Educational only).
 
-*(Place a screenshot of your Streamlit app here, e.g., `assets/app_screenshot.png`)*
 
 ## 🔒 Code Availability
 This repository contains the documentation, results analysis, and visual assets of the project.
